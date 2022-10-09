@@ -7,6 +7,12 @@ body {
   width: 20%;
 }
 
+.form-inline {
+  display:inline-flex;
+  overflow: hidden;
+  width: 400px;
+}
+
 .navbar {
   background-color: #B3B6B7;
 }
@@ -24,6 +30,36 @@ body {
   color: #6F1A07 !important;
 }
 
+#cooking-img {
+    animation: swing ease-in-out 1s
+    infinite alternate;
+    transform-origin: center -20px;
+}
+
+#cooking-img img {
+    display: block;
+}
+#cooking-img:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+#img-cook {
+  margin: 0 auto;
+}
+
 #dropdownMenuButton1 {
   background-color: inherit;
   border: none;
@@ -33,6 +69,10 @@ body {
   color: #6F1A07;
 }
 
+#floating-child {
+  margin: 0px 0px 0px 5px;
+}
+
 #nav-img {
   width: 7%;
   padding: 0 2% 0 0;
@@ -40,6 +80,26 @@ body {
 
 #nav-img:hover {
   opacity: 70%;
+}
+
+#h1-title {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+#h1-title:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+#search {
+  overflow-x: auto;
 }
 
 #user-img {

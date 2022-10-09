@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Recipe</title>
-    <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
   </head>
   <body>
       <!-- Nav Bar -->
@@ -22,11 +25,41 @@
       		<li><a class="dropdown-item" href="#">Sign Up</a></li>
       	  </ul>
       	</div>
-      <a class="navbar-brand" href="#">SecretRecipe</a>
+      <a class="navbar-brand" style="margin:0 auto;" href="#">SecretRecipe</a>
       <a class="nav-link" href="#"><img id="nav-img" src="images/shopping-cart.png"/>Cart</a>
     </nav>
       <!-- Title -->
-      <section id="title">
+      <section id="title" style="background-color:#AF9164;">
+        <h1 id="h1-title" style="font-family: 'Kalam', cursive; text-align:center; font-size:60px; color:#4D1E10; padding:80px 0px 0px 0px; text-shadow: 2px 2px 5px;">Secret Recipe</h1>
+        <div class="container" style="text-align:center;">
+          <div class="row" style="padding:0px 50px 10px 50px;">
+            <div class="col">
+              <img src="images/search-interface-symbol.png" style="width:4%; margin: 0px 15px 0px 0px;"/>
+              <form class="form-inline" id="search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="floating-child">Search</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" id="cooking-img">
+              <img src="images/cooking.png" style="width:20%;" id="img-cook"/>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!--- Cards -->
+      <div class="row">
+        <div class="col-6 col-sm-4" style="text-align:center;">
+          Column 1
+        </div>
+        <div class="col-6 col-sm-4" style="text-align:center;">
+          Column 2
+        </div>
+        <div class="col-6 col-sm-4" style="text-align:center;">
+          Column 3
+        </div>
+      </div>
   </body>
 </html>
