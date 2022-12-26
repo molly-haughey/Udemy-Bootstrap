@@ -14,9 +14,9 @@
   </head>
   <body>
       <!-- Nav Bar -->
-    <nav class="navbar navbar-expand lg justify-content-between w-100" navbar-warning bg-warning">
+    <nav class="navbar navbar-expand lg justify-content-between w-100" id="nav-container">
       <div class="dropdown">
-      	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      	  <button class="btn dropdown-toggle" id="search-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             <img id="user-img" src="images/user.png"/>
           </button>
       	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -29,12 +29,11 @@
       <a class="nav-link" href="#"><img id="nav-img" src="images/shopping-cart.png"/>Cart</a>
     </nav>
       <!-- Title -->
-      <section id="title" style="background-color:#AF9164;">
-        <h1 id="h1-title" style="font-family: 'Kalam', cursive; text-align:center; font-size:60px; color:#4D1E10; padding:80px 0px 0px 0px; text-shadow: 2px 2px 5px;">Secret Recipe</h1>
+      <section id="title">
+        <h1 id="h1-title" style="font-family: 'Kalam', cursive; text-align:center; font-size:60px; color:#FEE440; padding:80px 0px 0px 0px; text-shadow: 2px 2px 5px;">Secret Recipe</h1>
         <div class="container" style="text-align:center;">
-          <div class="row" style="padding:0px 50px 10px 50px;">
-            <div class="col">
-              <img src="images/search-interface-symbol.png" style="width:4%; margin: 0px 15px 0px 0px;"/>
+          <div class="row" id="row1" style="padding:0px 50px 10px 50px; position: relative;">
+            <div class="row" id="searching">
               <form class="form-inline" id="search">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="floating-child">Search</button>
@@ -43,7 +42,7 @@
           </div>
           <div class="row">
             <div class="col" id="cooking-img">
-              <img src="images/cooking.png" style="width:20%;" id="img-cook"/>
+              <img src="images/cooking.png" style="width:20%" id="img-cook"/>
             </div>
           </div>
         </div>
@@ -51,6 +50,7 @@
 
       <!--- Cards -->
       <div class="row">
+        <h2><span class="highlight">Recipes</span></h2>
         <div class="col-6 col-sm-4" style="text-align:center;">
           Column 1
         </div>

@@ -1,10 +1,19 @@
+h2 {
+  padding: 40px 0px 40px 0px;
+  text-align: center;
+}
+
 body {
-  background-color: #F7F3E3 !important;
-  color: #2B2118 !important;
+  background-image: linear-gradient(to right, #FEE440, #00BBF9, #F15BB5);
+  padding: 6px 0px 6px 0px !important;
 }
 
 .btn {
   width: 20%;
+}
+
+.dropdown:hover {
+  color:#FEE440;
 }
 
 .form-inline {
@@ -13,12 +22,13 @@ body {
   width: 400px;
 }
 
-.navbar {
-  background-color: #B3B6B7;
+.highlight {
+  background-color: #FEE440;
+  padding: 3px 6px;
 }
 
 .navbar-brand:hover {
-  color: #6F1A07 !important;
+  color: #FEE440 !important;
 }
 
 .nav-link {
@@ -27,7 +37,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #6F1A07 !important;
+  color: #FEE440 !important;
 }
 
 #cooking-img {
@@ -36,6 +46,13 @@ body {
     transform-origin: center -20px;
 }
 
+#container {
+  margin: 0px !important;
+}
+
+#cooking-img {
+  margin: 50px 0px 50px 0px;
+}
 #cooking-img img {
     display: block;
 }
@@ -58,6 +75,7 @@ body {
 
 #img-cook {
   margin: 0 auto;
+  opacity: 60%;
 }
 
 #dropdownMenuButton1 {
@@ -66,7 +84,7 @@ body {
 }
 
 #dropdownMenuButton1:hover {
-  color: #6F1A07;
+  color: #FEE440;
 }
 
 #floating-child {
@@ -100,6 +118,18 @@ body {
 
 #search {
   overflow-x: auto;
+}
+
+#searching {
+  display:inline !important;
+  text-align: center;
+}
+
+#title {
+  background-image: linear-gradient(to right, #FEE440, #00BBF9, #F15BB5);
+  padding: 3px 0px 3px 0px;
+  margin: 0px !important;
+  filter: hue-rotate(90deg);
 }
 
 #user-img {
