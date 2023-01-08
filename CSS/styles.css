@@ -10,10 +10,11 @@ body {
 
 .btn {
   width: 20%;
+  filter: invert(100%);
 }
 
-.dropdown:hover {
-  color:#FEE440;
+.btn:hover {
+  color:#FEE440 !important;
 }
 
 .form-inline {
@@ -27,6 +28,9 @@ body {
   padding: 3px 6px;
 }
 
+.navbar-brand {
+  color: #fff;
+}
 .navbar-brand:hover {
   color: #FEE440 !important;
 }
@@ -34,10 +38,17 @@ body {
 .nav-link {
   margin: 0 3% 0 0;
   text-align: right;
+  color:#fff;
 }
 
 .nav-link:hover {
   color: #FEE440 !important;
+}
+
+.recipe-pics {
+  width: 25%;
+  border-radius: 100%;
+  padding: 0px 0px 20px 0px;
 }
 
 #cooking-img {
@@ -76,6 +87,7 @@ body {
 #img-cook {
   margin: 0 auto;
   opacity: 60%;
+  filter: invert(100%);
 }
 
 #dropdownMenuButton1 {
@@ -94,10 +106,12 @@ body {
 #nav-img {
   width: 7%;
   padding: 0 2% 0 0;
+  filter: invert(100%);
 }
 
 #nav-img:hover {
   opacity: 70%;
+  color: #FEE440;
 }
 
 #h1-title {
